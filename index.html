@@ -79,7 +79,7 @@
             text-shadow: 1px 1px 2px #00ff88;
         }
 
-        div {
+        .desc {
             max-width: 800px;
             margin-bottom: 2rem;
         }
@@ -93,7 +93,16 @@
             font-size: .9rem;
         }
 
+        #win-logo {
+            margin-left: .5rem;
+            width: 2rem;
+        }
+
         .download-btn {
+            display: flex;
+            align-items: center;
+            column-gap: .5rem;
+
             color: unset;
             text-decoration: none;
             border: 2px solid #a5ccff;
@@ -110,6 +119,10 @@
             color: white;
         }
 
+        .download-btn svg {
+            width: 1rem;
+        }
+
         @media screen and (max-width: 1200px) {
             body {
                 background-image: url("pattern_image_small.png");
@@ -121,7 +134,7 @@
     <main>
         <h1>Excel App Demo</h1>
 
-        <div>
+        <div class="desc">
             <h2>Նախագծի ներկայացում</h2>
             <em>Ուշադրություն. Սա հավելվածի <u>ցուցադրական</u> (դեմո) տարբերակն է:</em>
             <br><br>
@@ -140,7 +153,9 @@
         </div>
 
         <a class="download-btn" href="#" download="file.zip">
-            Ներբեռնել &nbsp; &#10515;
+            Ներբեռնել
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 19H21V21H3V19ZM13 13.1716L19.0711 7.1005L20.4853 8.51472L12 17L3.51472 8.51472L4.92893 7.1005L11 13.1716V2H13V13.1716Z"></path></svg>
+            <svg id="win-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.501 3V11.5H3.00098V3H11.501ZM11.501 21H3.00098V12.5H11.501V21ZM12.501 3H21.001V11.5H12.501V3ZM21.001 12.5V21H12.501V12.5H21.001Z"></path></svg>
         </a>
     </main>
 </body>
